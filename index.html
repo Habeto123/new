@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Instrumentos</title>
+    <style>
+        body {
+            background-color: hsl(60, 81%, 54%);
+            font-family: Arial, sans-serif;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        #search-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #search {
+            padding: 10px;
+            width: 300px;
+        }
+        .instrument {
+            border: 1px solid #000;
+            margin: 10px;
+            padding: 10px;
+            display: inline-block;
+            text-align: center;
+            width: 200px;
+        }
+        .instrument img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <img src="E:\0 IBERO UNIVERSIDAD\06 semestre\Diseño Web\Tienda/cabecera3.jpg" alt="Descripción de la imagen">
+</body>
+<header>
+    <marquee behavior="scroll" direction="left" scrollamount="15" width="100%" style="background-color: rgb(233, 233, 124);">
+        <h1>Tienda de Instrumentos Andinos  Pasto - Nariño </h1>
+    </marquee>
+    
+    <div id="search-container">
+        <input type="text" id="search" placeholder="Buscar instrumentos...">
+    </div>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Seccion</a>   
+        <a href="#">Contactos</a>
+    </nav>
+</header>
+
+<main>
+    <h2>Instrumentos Disponibles</h2>
+    <div class="instrument">
+        <img src="E:\0 IBERO UNIVERSIDAD\06 semestre\Diseño Web\Tienda\zam6.jpg" alt="Instrumento 3">
+    </div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar al Carrito</title>
+    <style>
+        .producto {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            display: inline-block;
+        }
+        .boton-agregar {
+            background-color: #28a745;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="producto">
+    <h3>Zampoña Basto</h3>
+        <p>Bambu boliviano, 13 tubos enSol mayor</p>
+        <p>Precio: $150000</p>
+    <button class="boton-agregar" onclick="agregarAlCarrito('Nombre del Producto', 150000)">Agregar al Carrito</button>
+</div>
+<script>
+    let total = 0;
+
+    function agregarAlCarrito(nombre, precio) {
+        // Crear un nuevo elemento de lista
+        const li = document.createElement('li');
+        li.textContent = `${nombre} - $${precio}`;
+        
+        // Agregar al carrito
+        document.getElementById('lista-carrito').appendChild(li);
+        
+        // Actualizar el total
+        total += precio;
+        document.getElementById('total').textContent = total.toFixed(2);
+    }
+</script>
+    <div class="instrument">
+        <img src="E:\0 IBERO UNIVERSIDAD\06 semestre\Diseño Web\Tienda\zam8.jpg" alt="Instrumento 1">
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar al Carrito</title>
+    <style>
+        .producto {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            display: inline-block;
+        }
+        .boton-agregar {
+            background-color: #28a745;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="producto">
+    <h3>ZAmpoña Cromatica dos tapas </h3>
+        <p>Bambu boliviano</p>
+        <p>Precio: $160000</p>
+    <button class="boton-agregar" onclick="agregarAlCarrito('Nombre del Producto', 160000)">Agregar al Carrito</button>
+</div>
+
+
+
+<script>
+    let total = 0;
+
+    function agregarAlCarrito(nombre, precio) {
+        // Crear un nuevo elemento de lista
+        const li = document.createElement('li');
+        li.textContent = `${nombre} - $${precio}`;
+        
+        // Agregar al carrito
+        document.getElementById('lista-carrito').appendChild(li);
+        
+        // Actualizar el total
+        total += precio;
+        document.getElementById('total').textContent = total.toFixed(2);
+    }
+</script>
+    </div>
+    
+    <div class="instrument">
+        <img src="E:\0 IBERO UNIVERSIDAD\06 semestre\Diseño Web\Tienda\zam7.jpg" alt="Instrumento 2">
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar al Carrito</title>
+    <style>
+        .producto {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            display: inline-block;
+        }
+        .boton-agregar {
+            background-color: #28a745;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="producto">
+    <h3>Zampoña Sikus</h3>
+        <p>Bambu boliviano, 13 tubos enSol mayor</p>
+        <p>Precio: $55000</p>
+    <button class="boton-agregar" onclick="agregarAlCarrito('Nombre del Producto', 55000)">Agregar al Carrito</button>
+</div>
+
+
+
+<script>
+    let total = 0;
+
+    function agregarAlCarrito(nombre, precio) {
+        // Crear un nuevo elemento de lista
+        const li = document.createElement('li');
+        li.textContent = `${nombre} - $${precio}`;
+        
+        // Agregar al carrito
+        document.getElementById('lista-carrito').appendChild(li);
+        
+        // Actualizar el total
+        total += precio;
+        document.getElementById('total').textContent = total.toFixed(2);
+    }
+</script>
+    </div>
+    
+    
+    <div class="instrument">
+        <img src="E:\0 IBERO UNIVERSIDAD\06 semestre\Diseño Web\Tienda\zam5.jpg" alt="Instrumento 4">
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar al Carrito</title>
+    <style>
+        .producto {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            display: inline-block;
+        }
+        .boton-agregar {
+            background-color: #28a745;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="producto">
+    <h3>Flauta Nativa</h3>
+        <p>Bambu de Selva. Escala Sol pemtatonica menor</p>
+        <p>Precio: $120000</p>
+    <button class="boton-agregar" onclick="agregarAlCarrito('Nombre del Producto', 120000)">Agregar al Carrito</button>
+</div>
+
+
+
+<script>
+    let total = 0;
+
+    function agregarAlCarrito(nombre, precio) {
+        // Crear un nuevo elemento de lista
+        const li = document.createElement('li');
+        li.textContent = `${nombre} - $${precio}`;
+        
+        // Agregar al carrito
+        document.getElementById('lista-carrito').appendChild(li);
+        
+        // Actualizar el total
+        total += precio;
+        document.getElementById('total').textContent = total.toFixed(2);
+    }
+</script>
+    </div>
+    <div class="instrument">
+        <img src="E:\0 IBERO UNIVERSIDAD\06 semestre\Diseño Web\Tienda\zam4.jpg" alt="Instrumento 5">
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar al Carrito</title>
+    <style>
+        .producto {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            display: inline-block;
+        }
+        .boton-agregar {
+            background-color: #28a745;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="producto">
+    <h3>ZFlauta de Pan </h3>
+        <p>Bambu boliviano, 18 tubos en Sol mayor</p>
+        <p>Precio: $160000</p>
+    <button class="boton-agregar" onclick="agregarAlCarrito('Nombre del Producto', 160000)">Agregar al Carrito</button>
+</div>
+
+
+
+<script>
+    let total = 0;
+
+    function agregarAlCarrito(nombre, precio) {
+        // Crear un nuevo elemento de lista
+        const li = document.createElement('li');
+        li.textContent = `${nombre} - $${precio}`;
+        
+        // Agregar al carrito
+        document.getElementById('lista-carrito').appendChild(li);
+        
+        // Actualizar el total
+        total += precio;
+        document.getElementById('total').textContent = total.toFixed(2);
+    }
+</script>
+    </div>
+        <div class="instrument">
+        <img src="E:\0 IBERO UNIVERSIDAD\06 semestre\Diseño Web\Tienda\zam3.jpg" alt="Instrumento 6">
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar al Carrito</title>
+    <style>
+        .producto {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            display: inline-block;
+        }
+        .boton-agregar {
+            background-color: #28a745;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="producto">
+    <h3>Flauita de Pan </h3>
+        <p>Bambu boliviano, 22 tubos en Sol mayor</p>
+        <p>Precio: $150000</p>
+    <button class="boton-agregar" onclick="agregarAlCarrito('Nombre del Producto', 200000)">Agregar al Carrito</button>
+</div>
+
+<script>
+    let total = 0;
+
+    function agregarAlCarrito(nombre, precio) {
+        // Crear un nuevo elemento de lista
+        const li = document.createElement('li');
+        li.textContent = `${nombre} - $${precio}`;
+        
+        // Agregar al carrito
+        document.getElementById('lista-carrito').appendChild(li);
+        
+        // Actualizar el total
+        total += precio;
+        document.getElementById('total').textContent = total.toFixed(2);
+    }
+</script>
+    </div>
+   
+    <div class="instrument">
+        <img src="E:\0 IBERO UNIVERSIDAD\06 semestre\Diseño Web\Tienda\zam1.jpg" alt="Instrumento 8">
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar al Carrito</title>
+    <style>
+        .producto {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            display: inline-block;
+        }
+        .boton-agregar {
+            background-color: #28a745;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="producto">
+    <h3>Zampoña Malta</h3>
+        <p>Bambu boliviano, 21 tubos en Sol mayor</p>
+        <p>Precio: $75000</p>
+    <button class="boton-agregar" onclick="agregarAlCarrito('Nombre del Producto', 75000)">Agregar al Carrito</button>
+</div>
+
+
+
+<script>
+    let total = 0;
+
+    function agregarAlCarrito(nombre, precio) {
+        // Crear un nuevo elemento de lista
+        const li = document.createElement('li');
+        li.textContent = `${nombre} - $${precio}`;
+        
+        // Agregar al carrito
+        document.getElementById('lista-carrito').appendChild(li);
+        
+        // Actualizar el total
+        total += precio;
+        document.getElementById('total').textContent = total.toFixed(2);
+    }
+</script>
+    </div>
+    <div class="instrument">
+        <img src="E:\0 IBERO UNIVERSIDAD\06 semestre\Diseño Web\Tienda\zam2.jpg" alt="Instrumento 7">
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar al Carrito</title>
+    <style>
+        .producto {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            display: inline-block;
+        }
+        .boton-agregar {
+            background-color: #28a745;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="producto">
+    <h3>Flauta de Pan </h3>
+        <p>Bambu boliviano, 22 tubos en Afinable</p>
+        <p>Precio: $230000</p>
+    <button class="boton-agregar" onclick="agregarAlCarrito('Nombre del Producto', 230000)">Agregar al Carrito</button>
+</div>
+
+<script>
+    let total = 0;
+
+    function agregarAlCarrito(nombre, precio) {
+        // Crear un nuevo elemento de lista
+        const li = document.createElement('li');
+        li.textContent = `${nombre} - $${precio}`;
+        
+        // Agregar al carrito
+        document.getElementById('lista-carrito').appendChild(li);
+        
+        // Actualizar el total
+        total += precio;
+        document.getElementById('total').textContent = total.toFixed(2);
+    }
+</script>
+    </div>
+    <div id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito"></ul>
+        <p>Total: $<span id="total">0</span></p>
+    </div>
+    <br>
+    <br>
+    <br>
+        
+        <title>Videos de YouTube en Sección Horizontal</title>
+        <style>
+            .video-container {
+                display: flex; /* Flexbox para alinear en horizontal */
+                justify-content: space-around; /* Espacio entre los videos */
+                flex-wrap: wrap; /* Permite que los videos se ajusten si hay poco espacio */
+                padding: 20px; /* Espaciado interno */
+            }
+            .video {
+                flex: 1; /* Cada video ocupa el mismo espacio */
+                min-width: 300px; /* Anchura mínima para cada video */
+                margin: 10px; /* Margen entre videos */
+            }
+            iframe {
+                width: 100%; /* Hace que el iframe ocupe el 100% de su contenedor */
+                height: 200px; /* Altura fija del video */
+            }
+        </style>
+
+    </body>
+    <h1>Videos HABETO</h1>
+<div class="video-container">
+    <div class="video">
+        <h1>Zampoñas</h1>
+        <iframe src="https://www.youtube.com/embed/OlCBvlFyods?si=Oa6RaD3jsCIOjVKq" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="video">
+        <h1>Flauta de Pan</h1>
+        <iframe src="https://www.youtube.com/embed/fMTkadXrk_0?si=61iwgj3lQPDmsUgI" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+<h1>CONTACTOS </h1>
+<form action="submit_form.php" method="POST">
+    <label for="name">Nombre:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Correo Electrónico:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="message">Mensaje:</label><br>
+    <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+    <button type="submit">Enviar</button>
+</form>
+
+<h2>También estamos en:</h2>
+<div class="social-links">
+    <a href="https://www.facebook.com/share/A7dwRCudyJFnNVhs/" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com/habeto1021?igsh=dDhld2hmOTl6aGox" target="_blank">Instagram</a>
+    <a href="https://www.tiktok.com/@habeto.alex.b?_t=8rlgob5wxex&_r=1" target="_blank">Tiktok</a>
+</div>
+
+<h2>Información de Contacto</h2>
+<p>Teléfono: <a href="WP +57 3234794590">WP +57 3234794590</a></p>
+<p>Email: <a href="habeto1021@gmail.com">habeto1021@gmail.com</a></p>
+
+</body>
+</html>
